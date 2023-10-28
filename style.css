@@ -1,0 +1,18 @@
+body{
+    min-height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.btn{
+    
+    
+    background-color:rgba(0,0,0, 0.6);
+    padding:15px 10px;
+    border: 1px solid;
+    border-radius: 7px;
+    color:azure;
+    font-size: 40px;
+}
