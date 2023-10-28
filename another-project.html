@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2 class="hex">this hex color is: <span class="hexColor"> </span> </h2>
+        
+<button class="btn">Click here to get hex color </button>  </div>
+<script>
+    const btn = document.querySelector('.btn');
+const bcg = document.querySelector('body');
+let colors = [0,1,2,3,4,5,6,7,8,9,'A','B','C','D','E','F'];
+btn.addEventListener('click',getColor);
+const hex = document.querySelector('.hexColor')
+
+function getColor(){
+    let hexCol ="#";
+    for(var i=0;i<6;i++){
+        let random= Math.floor(Math.random()*colors.length);
+        
+        hexCol+= colors[random];
+        
+        
+        
+    }
+    bcg.style.backgroundColor=hexCol;
+    hex.innerHTML=hexCol;
+    
+}
+
+</script>
+    <script src="./script.js"></script>
+</body>
+</html>
